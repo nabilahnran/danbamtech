@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Healthcare</string>
+    <string name="menu_title">MENU</string>
+    <string name="poli_umum">Poli Umum</string>
+    <string name="poli_saraf">Poli Saraf</string>
+    <string name="poli_gigi">Poli Gigi</string>
+    <string name="poli_bedah">Poli Bedah</string>
+    <string name="poli_anak">Poli Anak</string>
+    <string name="pilih_poliklinik">Pilih Poliklinik</string>
+    <string name="nomor_antrian">Nomor Antrian</string>
+</resources>
