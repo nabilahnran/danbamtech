@@ -6,6 +6,21 @@
     <string name="poli_gigi">Poli Gigi</string>
     <string name="poli_bedah">Poli Bedah</string>
     <string name="poli_anak">Poli Anak</string>
-    <string name="pilih_poliklinik">Pilih Poliklinik</string>
-    <string name="nomor_antrian">Nomor Antrian</string>
+    <string name="pilih_poliklinik_title">Pilih Poliklinik</string>
+    <string name="nomor_antrian_title">Nomor Antrian</string>
+    <string name="value">0</string>
+    <string name="poli">Poli ...</string>
+    <string name="input_keluhan_pasien_title">Input Keluhan Pasien</string>
+    <string name="antrian_saat_ini">Antrian saat ini</string>
+    <string name="id_pasien_text">ID Pasien :</string>
+    <string name="nama_pasien_text">Nama :</string>
+    <string name="value_string">...</string>
+    <string name="umur_pasien_text">Umur :</string>
+    <string name="jenis_kelamin_pasien_text">Jenis Kelamin :</string>
+    <string name="input_data_konsultasi">Input Data Konsultasi</string>
+    <string name="riwayat_konsultasi_pasien_title">Riwayat Konsultasi</string>
+    <string name="data_konsultasi">Data Konsultasi</string>
+    <string name="data_pasien_title">Data Pasien</string>
+    <string name="button_a">Lihat data riwayat konsultasi pasien</string>
+    <string name="button_b">Tambah data konsultasi</string>
 </resources>

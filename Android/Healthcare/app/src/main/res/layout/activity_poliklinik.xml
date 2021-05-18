@@ -10,14 +10,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_xxl"
 
-        android:layout_marginTop="162dp"
-
-        android:text="@string/pilih_poliklinik"
-        android:textColor="@color/teal"
+        android:text="@string/pilih_poliklinik_title"
+        android:textSize="@dimen/text_Header"
         android:gravity="center_horizontal"
-        android:fontFamily="@font/righteous"
-        android:textSize="82sp" />
+
+        android:fontFamily="@font/barlow_bold"
+        android:textColor="@color/teal" />
 
     <ImageView
         android:id="@+id/imageView3"

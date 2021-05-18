@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="small_dimen">4dp</dimen>
-    <dimen name="medium_dimen">8dp</dimen>
-    <dimen name="large_dimen">16dp</dimen>
+    <dimen name="dimen_xs">4dp</dimen>
+    <dimen name="dimen_s">8dp</dimen>
+    <dimen name="dimen_m">16dp</dimen>
+    <dimen name="dimen_l">32dp</dimen>
+    <dimen name="dimen_xl">64dp</dimen>
+    <dimen name="dimen_xxl">128dp</dimen>
 
-    <dimen name="large_text">16sp</dimen>
-    <dimen name="xlarge_text">18sp</dimen>
-    <dimen name="xxlarge_text">24sp</dimen>
+    <dimen name="text_xs">16sp</dimen>
+    <dimen name="text_s">18sp</dimen>
+    <dimen name="text_m">20sp</dimen>
+    <dimen name="text_l">24sp</dimen>
+    <dimen name="text_xl">32sp</dimen>
+    <dimen name="text_xxl">64sp</dimen>
 
-    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_Header">80sp</dimen>
+
+
 </resources>

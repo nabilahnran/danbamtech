@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KeluhanPasien">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_xxl"
+
+        android:text="@string/data_pasien_title"
+        android:textSize="@dimen/text_Header"
+        android:gravity="center_horizontal"
+
+        android:fontFamily="@font/barlow_bold"
+        android:textColor="@color/teal" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/dimen_l"
+        android:layout_marginBottom="@dimen/dimen_l"
+        android:layout_marginLeft="@dimen/dimen_m"
+        android:layout_marginRight="@dimen/dimen_m"
+
+        app:cardCornerRadius="@dimen/dimen_l"
+        android:backgroundTint="@color/teal_dark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/dimen_l"
+                    android:layout_marginTop="@dimen/dimen_l"
+
+                    android:text="@string/id_pasien_text"
+                    android:textSize="@dimen/text_xl"
+
+                    android:fontFamily="@font/barlow_bold"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_idpasien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/dimen_l"
+                    android:layout_marginTop="@dimen/dimen_l"
+
+                    android:text="@string/value"
+                    android:textSize="@dimen/text_xl"
+
+                    android:fontFamily="@font/barlow_bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/dimen_l"
+                    android:layout_marginTop="@dimen/dimen_m"
+
+                    android:text="@string/nama_pasien_text"
+                    android:textSize="@dimen/text_xl"
+
+                    android:fontFamily="@font/barlow_bold"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/dimen_l"
+                    android:layout_marginTop="@dimen/dimen_m"
+
+                    android:text="@string/value_string"
+                    android:textSize="@dimen/text_xl"
+
+                    android:fontFamily="@font/barlow_bold"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/dimen_l"
+                    android:layout_marginTop="@dimen/dimen_m"
+
+                    android:text="@string/umur_pasien_text"
+                    android:textSize="@dimen/text_xl"
+
+                    android:fontFamily="@font/barlow_bold"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_umur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/dimen_l"
+                    android:layout_marginTop="@dimen/dimen_m"
+
+                    android:text="@string/value"
+                    android:textSize="@dimen/text_xl"
+
+                    android:fontFamily="@font/barlow_bold"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_l"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/dimen_l"
+                    android:layout_marginTop="@dimen/dimen_m"
+
+                    android:text="@string/jenis_kelamin_pasien_text"
+                    android:textSize="@dimen/text_xl"
+
+                    android:fontFamily="@font/barlow_bold"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/dimen_l"
+                    android:layout_marginTop="@dimen/dimen_m"
+
+                    android:text="@string/value_string"
+                    android:textSize="@dimen/text_xl"
+
+                    android:fontFamily="@font/barlow_bold"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_xxl"
+
+        android:layout_marginTop="@dimen/dimen_l"
+        android:layout_marginStart="@dimen/text_l"
+        android:layout_marginEnd="@dimen/text_l"
+
+        android:backgroundTint="@color/teal"
+
+        android:text="@string/button_a"
+        android:textSize="@dimen/text_l"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_xxl"
+
+        android:layout_marginTop="@dimen/dimen_l"
+        android:layout_marginStart="@dimen/text_l"
+        android:layout_marginEnd="@dimen/text_l"
+
+        android:backgroundTint="@color/teal"
+
+        android:text="@string/button_b"
+        android:textSize="@dimen/text_l"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"/>
+
+</LinearLayout>
