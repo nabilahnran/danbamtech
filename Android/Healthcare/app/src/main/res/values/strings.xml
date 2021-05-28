@@ -23,4 +23,7 @@
     <string name="data_pasien_title">Data Pasien</string>
     <string name="button_a">Lihat data riwayat konsultasi pasien</string>
     <string name="button_b">Tambah data konsultasi</string>
+
+    <string name="pilih_poliklinik">Pilih Poliklinik</string>
+    <string name="nomor_antrian">Nomor Antrian</string>
 </resources>

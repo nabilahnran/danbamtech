@@ -4,32 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ScanQr">
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="162dp"
-
+        android:layout_marginTop="16dp"
         android:text="Scan QR Code"
+        android:layout_marginHorizontal="8dp"
         android:textColor="@color/teal"
         android:gravity="center_horizontal"
         android:fontFamily="@font/righteous"
-        android:textSize="82sp" />
+        android:textSize="56sp" />
 
     <ImageView
+        android:layout_marginTop="32dp"
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         app:srcCompat="@drawable/sample_qr" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        app:srcCompat="@drawable/scan_bg" />
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="300dp"-->
+    <!--        android:layout_gravity="start"-->
+    <!--        app:srcCompat="@drawable/scan_bg" />-->
 
 </LinearLayout>

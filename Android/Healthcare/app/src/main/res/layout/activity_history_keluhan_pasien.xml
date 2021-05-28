@@ -1,192 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".HistoryKeluhanPasien">
+    android:layout_height="match_parent">
 
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_xxl"
+        android:layout_height="match_parent">
 
-        android:text="@string/riwayat_konsultasi_pasien_title"
-        android:textSize="@dimen/text_Header"
-        android:gravity="center_horizontal"
-
-        android:fontFamily="@font/barlow_bold"
-        android:textColor="@color/teal" />
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:layout_marginTop="@dimen/dimen_l"
-        android:layout_marginBottom="@dimen/dimen_l"
-        android:layout_marginLeft="@dimen/dimen_m"
-        android:layout_marginRight="@dimen/dimen_m"
-
-        app:cardCornerRadius="@dimen/dimen_l"
-        android:backgroundTint="@color/teal_dark">
+        <TextView
+            android:id="@+id/tv_datapasien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/barlow_bold"
+            android:text="RIWAYAT KONSULTASI"
+            android:textAlignment="center"
+            android:textColor="#0B99A7"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="61dp" />
 
         <LinearLayout
+            android:id="@+id/ll2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/myshape2"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/tv_datapasien">
 
-            <LinearLayout
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                    android:layout_marginStart="@dimen/dimen_l"
-                    android:layout_marginTop="@dimen/dimen_l"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:textColor="@color/white"
+                        android:text="ID PASIEN  " />
 
-                    android:text="@string/id_pasien_text"
-                    android:textSize="@dimen/text_xl"
+                    <TextView
+                        android:id="@+id/id_pasien"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:textColor="@color/white"
+                        tools:text="ID PASIEN " />
+                </TableRow>
 
-                    android:fontFamily="@font/barlow_bold"
-                    android:textColor="@color/white" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tv_idpasien"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:textColor="@color/white"
+                        android:text="NAMA PASIEN  " />
 
-                    android:layout_marginStart="@dimen/dimen_l"
-                    android:layout_marginTop="@dimen/dimen_l"
+                    <TextView
+                        android:id="@+id/nama_pasien"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:textColor="@color/white"
+                        tools:text="NAMA PASIEN  " />
 
-                    android:text="@string/value"
-                    android:textSize="@dimen/text_xl"
+                </TableRow>
 
-                    android:fontFamily="@font/barlow_bold"
-                    android:textColor="@color/white"/>
-            </LinearLayout>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:textColor="@color/white"
+                        android:text="UMUR PASIEN  " />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    <TextView
+                        android:id="@+id/umur_pasien"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:textColor="@color/white"
+                        tools:text="UMUR PASIEN  " />
 
-                    android:layout_marginStart="@dimen/dimen_l"
-                    android:layout_marginTop="@dimen/dimen_m"
+                </TableRow>
 
-                    android:text="@string/nama_pasien_text"
-                    android:textSize="@dimen/text_xl"
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                    android:fontFamily="@font/barlow_bold"
-                    android:textColor="@color/white" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/white"
+                        android:text="JENIS KELAMIN PASIEN  " />
 
-                <TextView
-                    android:id="@+id/tv_nama"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    <TextView
+                        android:id="@+id/jk_pasien"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/white"
+                        tools:text="JENIS KELAMIN PASIEN  " />
 
-                    android:layout_marginStart="@dimen/dimen_l"
-                    android:layout_marginTop="@dimen/dimen_m"
+                </TableRow>
+            </TableLayout>
 
-                    android:text="@string/value_string"
-                    android:textSize="@dimen/text_xl"
-
-                    android:fontFamily="@font/barlow_bold"
-                    android:textColor="@color/white" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_marginStart="@dimen/dimen_l"
-                    android:layout_marginTop="@dimen/dimen_m"
-
-                    android:text="@string/umur_pasien_text"
-                    android:textSize="@dimen/text_xl"
-
-                    android:fontFamily="@font/barlow_bold"
-                    android:textColor="@color/white" />
-
-                <TextView
-                    android:id="@+id/tv_umur"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_marginStart="@dimen/dimen_l"
-                    android:layout_marginTop="@dimen/dimen_m"
-
-                    android:text="@string/value"
-                    android:textSize="@dimen/text_xl"
-
-                    android:fontFamily="@font/barlow_bold"
-                    android:textColor="@color/white" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/dimen_l"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_marginStart="@dimen/dimen_l"
-                    android:layout_marginTop="@dimen/dimen_m"
-
-                    android:text="@string/jenis_kelamin_pasien_text"
-                    android:textSize="@dimen/text_xl"
-
-                    android:fontFamily="@font/barlow_bold"
-                    android:textColor="@color/white" />
-
-                <TextView
-                    android:id="@+id/tv_gender"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_marginStart="@dimen/dimen_l"
-                    android:layout_marginTop="@dimen/dimen_m"
-
-                    android:text="@string/value_string"
-                    android:textSize="@dimen/text_xl"
-
-                    android:fontFamily="@font/barlow_bold"
-                    android:textColor="@color/white" />
-            </LinearLayout>
         </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/input_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:text="Masukkan Data Konsultasi"
+            android:textColor="#0B99A7"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/ll2" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/myshape1"
+            app:layout_constraintTop_toBottomOf="@id/input_data"
+            tools:listitem="@layout/item_list_riwayat_konsultasi" />
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:background="@drawable/myshape1"-->
+        <!--        android:layout_marginTop="32dp"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/input_data"-->
+        <!--        android:orientation="vertical"-->
+        <!--        >-->
+        <!--        -->
 
-        android:layout_marginStart="@dimen/dimen_l"
-        android:layout_marginEnd="@dimen/dimen_l"
 
-        android:text="@string/data_konsultasi"
-        android:textSize="@dimen/text_xl"
-
-        android:textColor="@color/teal_dark"/>
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/dimen_s" />
-
-</LinearLayout>
+        <!--    </LinearLayout>-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

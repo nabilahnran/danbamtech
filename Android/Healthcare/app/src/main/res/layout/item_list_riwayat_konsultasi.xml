@@ -9,7 +9,6 @@
     android:background="@drawable/myshape">
 
     <TextView
-        android:id="@+id/tv_antrian"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
@@ -18,6 +17,6 @@
         android:layout_marginLeft="40dp"
         tools:layout_editor_absoluteX="36dp"
         tools:layout_editor_absoluteY="16dp"
-        tools:text="ANTRIAN PASIEN KE - " />
+        tools:text="Riwayat konsultasi " />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,36 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="162dp"
-
+        android:layout_marginTop="48dp"
         android:text="@string/menu_title"
         android:textColor="@color/teal"
         android:gravity="center_horizontal"
         android:fontFamily="@font/righteous"
-        android:textSize="162sp" />
+        android:textSize="48sp" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-
         android:layout_gravity="center"
-        android:layout_marginVertical="32dp">
+        android:layout_marginVertical="48dp">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="220dp"
-            android:layout_height="220dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:backgroundTint="@color/teal"
             app:cardCornerRadius="32dp"
-            android:layout_marginHorizontal="16dp">
+            android:layout_marginHorizontal="12dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -41,17 +38,16 @@
                 android:gravity="center">
 
                 <ImageView
-                    android:layout_width="84dp"
-                    android:layout_height="84dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
                     android:layout_gravity="center"
                     app:srcCompat="@drawable/ic_baseline_monitor_icon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:text="Monitor Antrian"
-                    android:textSize="32sp"
+                    android:textSize="18sp"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:textColor="@color/white" />
@@ -61,11 +57,11 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="220dp"
-            android:layout_height="220dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:backgroundTint="@color/teal"
             app:cardCornerRadius="32dp"
-            android:layout_marginHorizontal="16dp">
+            android:layout_marginHorizontal="4dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -74,19 +70,18 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="84dp"
-                    android:layout_height="84dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
                     android:layout_gravity="center"
                     app:srcCompat="@drawable/ic_baseline_person_icon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:text="Menu untuk Pasien"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="32sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -94,11 +89,11 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="220dp"
-            android:layout_height="220dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:backgroundTint="@color/teal"
             app:cardCornerRadius="32dp"
-            android:layout_marginHorizontal="16dp">
+            android:layout_marginHorizontal="8dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -107,19 +102,18 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="84dp"
-                    android:layout_height="84dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
                     android:layout_gravity="center"
                     app:srcCompat="@drawable/ic_baseline_medical_services_icon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:text="Menu untuk Dokter"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="32sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -133,15 +127,14 @@
         android:layout_height="match_parent">
 
         <ImageView
+            android:layout_marginTop="120dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="290dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/menu_bg" />
+            app:srcCompat="@drawable/menu1" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
