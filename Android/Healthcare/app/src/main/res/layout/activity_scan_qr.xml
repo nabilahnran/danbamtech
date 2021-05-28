@@ -1,34 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clMain"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <TextView
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Scan QR Code"
-        android:layout_marginHorizontal="8dp"
-        android:textColor="@color/teal"
-        android:gravity="center_horizontal"
-        android:fontFamily="@font/righteous"
-        android:textSize="56sp" />
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_marginTop="32dp"
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        app:srcCompat="@drawable/sample_qr" />
+        android:id="@+id/imgFlashLight"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_flash_off_24" />
 
-    <!--    <ImageView-->
-    <!--        android:id="@+id/imageView2"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="300dp"-->
-    <!--        android:layout_gravity="start"-->
-    <!--        app:srcCompat="@drawable/scan_bg" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical">-->
 
-</LinearLayout>
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="Scan QR Code"-->
+<!--        android:layout_marginHorizontal="8dp"-->
+<!--        android:textColor="@color/teal"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:fontFamily="@font/righteous"-->
+<!--        android:textSize="56sp" />-->
+
+<!--    <ImageView-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp"-->
+<!--        app:srcCompat="@drawable/sample_qr" />-->
+
+<!--    &lt;!&ndash;    <ImageView&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:id="@+id/imageView2"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_height="300dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_gravity="start"&ndash;&gt;-->
+<!--    &lt;!&ndash;        app:srcCompat="@drawable/scan_bg" />&ndash;&gt;-->
+
+<!--</LinearLayout>-->
