@@ -26,4 +26,5 @@
 
     <string name="pilih_poliklinik">Pilih Poliklinik</string>
     <string name="nomor_antrian">Nomor Antrian</string>
+    <string name="antrian">ANTRIAN</string>
 </resources>
