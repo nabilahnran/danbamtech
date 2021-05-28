@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnMenupasien.setOnClickListener {
-            startActivity(Intent(this, ScanQr::class.java))
+            startActivity(Intent(this, HistoryKeluhanPasien::class.java))
         }
 
         binding.btnMenudokter.setOnClickListener {
