@@ -22,7 +22,7 @@ import com.google.mlkit.vision.common.InputImage
 
 class ScanQr : AppCompatActivity() {
 
-    val TAG = "MainActivity"
+    val TAG = "ScanQr"
 
     private lateinit var camera: Camera
     private lateinit var cameraProvider: ProcessCameraProvider

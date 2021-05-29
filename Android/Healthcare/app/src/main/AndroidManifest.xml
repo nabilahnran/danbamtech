@@ -17,6 +17,7 @@
         <activity android:name=".InputKeluhanPasien" />
         <activity android:name=".KeluhanPasien" />
         <activity android:name=".DashboardDokter" />
+        <activity android:name=".ScanQr" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
