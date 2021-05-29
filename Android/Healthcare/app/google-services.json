@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "409854698176",
+    "firebase_url": "https://tes-project-3e76c-default-rtdb.firebaseio.com",
+    "project_id": "tes-project-3e76c",
+    "storage_bucket": "tes-project-3e76c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409854698176:android:0bbfee88ff920b0aa30325",
+        "android_client_info": {
+          "package_name": "com.danbamtech.healthcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409854698176-u83snjahto8b1ulimbqh8gbc81vtgank.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe-LpQqy29gUEVIWPsZbeL9PVuKZ4nS8o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "409854698176-u83snjahto8b1ulimbqh8gbc81vtgank.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409854698176:android:929798c3c3c51ca1a30325",
+        "android_client_info": {
+          "package_name": "com.helga.tesproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409854698176-u83snjahto8b1ulimbqh8gbc81vtgank.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe-LpQqy29gUEVIWPsZbeL9PVuKZ4nS8o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "409854698176-u83snjahto8b1ulimbqh8gbc81vtgank.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

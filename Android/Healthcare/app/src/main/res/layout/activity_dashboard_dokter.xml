@@ -40,14 +40,12 @@
             android:layout_below="@id/tv_antrian"
             />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_list_antrian_dokter"
+        <ListView
+            android:id="@+id/lv_hasil"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="540dp"
             android:layout_below="@id/tv_poli"
-            android:layout_marginTop="80dp"
-            android:background="@drawable/myshape1"
-            tools:listitem="@layout/item_list_antriandokter" />
+            android:layout_marginTop="80dp" />
 
     </RelativeLayout>
 
