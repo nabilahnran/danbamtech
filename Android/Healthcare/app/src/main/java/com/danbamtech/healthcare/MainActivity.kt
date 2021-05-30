@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnMenudokter.setOnClickListener {
-            startActivity(Intent(this, Poliklinik::class.java))
+            startActivity(Intent(this, PoliActivity::class.java))
         }
 
 //        binding.btnMenudokter.setOnClickListener {
