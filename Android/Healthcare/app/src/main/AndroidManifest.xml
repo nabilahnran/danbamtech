@@ -12,13 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Healthcare">
-        <activity android:name=".DashboardAntrian"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".DashboardAntrian" />
+        <activity android:name=".Poliklinik" />
         <activity android:name=".HistoryKeluhanPasien" />
         <activity android:name=".InputKeluhanPasien" />
         <activity android:name=".KeluhanPasien" />
         <activity android:name=".DashboardDokter" />
         <activity android:name=".ScanQr" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".PoliActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
