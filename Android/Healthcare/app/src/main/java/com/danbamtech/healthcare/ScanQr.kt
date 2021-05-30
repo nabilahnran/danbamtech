@@ -119,12 +119,15 @@ class ScanQr : AppCompatActivity() {
                             Log.e(TAG, "processImageProxy: " + barcodeList[0].rawValue)
                             cameraProvider.unbindAll()
                             setFlashOffIcon()
-                            Snackbar.make(this@ScanQr,binding.clMain,
-                                "${barcodeList[0].rawValue!!}", Snackbar.LENGTH_INDEFINITE)
-                                .setAction("Retry") {
-                                    startCamera()
-                                }
-                                .show()
+                            if (barcodeList[0].rawValue.toString().toLowerCase().equals("tiket pasien")) {
+                                startActivity(Intent(this, PoliActivity::class.java))
+                            }
+//                            Snackbar.make(this@ScanQr,binding.clMain,
+//                                "${barcodeList[0].rawValue!!}", Snackbar.LENGTH_INDEFINITE)
+//                                .setAction("Retry") {
+//                                    startCamera()
+//                                }
+//                                .show()
                         }
                     }
                 }.addOnFailureListener {
