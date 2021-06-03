@@ -10,8 +10,8 @@ Danbam-tech
 - M0050427 Galuh Putra Warman (github: galuhputraa)
 - M2142089 Nabiilah Nuur Ainii (github: nabilahnran)
 
-For the capstone project, we build a simple application for the _healthcare_ field problem called Danbamcare, which is a
-***Touchless Hospital Integrated Queueing System***
+For the capstone project, we build a simple application for the _healthcare_ field problem called ***Danbamcare***, which is a
+***Touchless Hospital Integrated Queueing System***.
 We hope this application can help people while queueing in hospital, especially in this COVID-19 pandemic situation where everybody should adhere to health protocols, one of them being to avoid and minimize physical contact with public objects and other people.
 Besides that, patients don't have to bring any document because the data of the patients has been stored in the hospital cloud database, so patient will just use their own QR code to run this app so that this app can get the patient data much more quickly and easily.
 
