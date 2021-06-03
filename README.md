@@ -10,7 +10,7 @@ Danbam-tech
 - M0050427 Galuh Putra Warman (github: galuhputraa)
 - M2142089 Nabiilah Nuur Ainii (github: nabilahnran)
 
-For the capstone project, we build a simple app for _healthcare_ field problem, which is called
+For the capstone project, we build a simple application for the _healthcare_ field problem called Danbamcare, which is a
 ***Touchless Hospital Integrated Queueing System***
 We hope this application can help people while queueing in hospital, especially in this COVID-19 pandemic situation where everybody should adhere to health protocols, one of them being to avoid and minimize physical contact with public objects and other people.
 Besides that, patients don't have to bring any document because the data of the patients has been stored in the hospital cloud database, so patient will just use their own QR code to run this app so that this app can get the patient data much more quickly and easily.
@@ -25,7 +25,7 @@ Android Development: Generating ML model and whole operation in app, using Andro
 ###### Android phone used to open app version 10
 ###### Layout: Tab xxxxx
 
-Cloud Computing: Create database and storing them on Google Cloud Platform and store them using Firebase so that the Android application can get the data, deploying the machine learning on AI Platform 
+Cloud Computing: Create database, store them on Google Cloud Platform, import the database that has been created to Firebase so that the Android application can get the data that has been created, and deploying the machine learning model on AI Platform on Google Cloud Platform.
 ###### Firebase
 ###### Google Cloud Platform
 
@@ -33,11 +33,11 @@ Cloud Computing: Create database and storing them on Google Cloud Platform and s
 this section with image
 
 1. Patient come to tab that have been provided by hospital
-2. Patient scan QR code that they have to app proccess their data, and managing related data in database
-3. Patient choosing poly by make a number hand gesture 0-6 (in this example app the hospital have 6 poly), the number depend on what poly they choose. the option and example hand gesture displayed on the screen too. patient's hand gesture will be captured when timer reach 0 (count down from 10)
-4. Result (patient's name, choosen poly, number of queue they have, and current number of queue in that poly) appear.
-5. After patient entered medical examination room and have been checked by doctor, the doctor insert the medical examination result to the app (login as doctor) and the data integrated in hospital system so patient shouldn't bring any hardcopy documents.
-6. Patient's medical records stored in hospital database, can be read, edit by the doctor concerned.
+2. Patient scan QR code that they have for the app proccess their data, and to manage related data in the database
+3. Patient choose poly specialization by making a number hand gesture 0-6 (in this example app, the hospital has 6 poly specialization), the number depend on what poly they choose. the options and the hand gesture examples are displayed on the screen too. The patient's hand gesture will be captured when the timer reach 0 (count down from 10)
+4. The results which are patient's name, choosen poly, number of queue they have, and the current number of queue in that poly appear.
+5. After patient entered the medical examination room and have been checked by the doctor, the doctor insert the medical examination result to the app (login as doctor) and the data is integrated in the hospital system so patient shouldn't bring any hardcopy documents.
+6. Patient's medical records are stored in the hospital database and can be read and edited by the concerned doctor.
 
 ## Links
 
