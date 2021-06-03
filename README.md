@@ -25,9 +25,11 @@ Android Development: Generating ML model and whole operation in app, using Andro
 ###### Android phone used to open app version 10
 ###### Layout: Tab xxxxx
 
-Cloud Computing: Create a database, store them on Google Cloud Platform, import the database that has been created to Firebase so that the Android application can get the data that has been created, and deploy the machine learning model on AI Platform by using Jupyter Notebook on Google Cloud Platform. Previously we created a relational database using CloudSQL, but this took a lot of credits so we used firebase for our database.
+Cloud Computing: Create a database, store them on Google Cloud Platform, import the database that has been created to Firebase so that the Android application can get the data that has been created, and deploy the machine learning model on AI Platform by using Jupyter Notebook on Google Cloud Platform. Previously we created a relational database using CloudSQL, but this took a lot of credits so we used firebase for our database. We also use Cloud Storage buckets to store datasets that will be used by ML Path
 ###### Firebase
 ###### AI Platform (GCP)
+###### Cloud Storage (GCP)
+
 
 ## Application Workflow
 this section with image
