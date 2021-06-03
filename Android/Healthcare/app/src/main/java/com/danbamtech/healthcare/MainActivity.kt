@@ -32,9 +32,12 @@ class MainActivity : AppCompatActivity() {
 //        binding.btnMenudokter.setOnClickListener {
 //            startActivity(Intent(this, PoliActivity::class.java))
 //        }
+//        binding.btnMenudokter.setOnClickListener {
+//            startActivity(Intent(this, AmbilAntrian::class.java))
+//        }
 
-        binding.btnMenudokter.setOnClickListener {
-            startActivity(Intent(this, DashboardDokter::class.java))
-        }
+//        binding.btnMenudokter.setOnClickListener {
+//            startActivity(Intent(this, DashboardDokter::class.java))
+//        }
     }
 }

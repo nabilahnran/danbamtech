@@ -2,10 +2,8 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-parcelize'
-//    id 'com.google.gms.google-services'
+    id 'com.google.gms.google-services'
 }
-
-apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 30
@@ -42,9 +40,6 @@ android {
         noCompress "tflite"
     }
 
-    aaptOptions {
-        noCompress "tflite"
-    }
 }
 
 dependencies {

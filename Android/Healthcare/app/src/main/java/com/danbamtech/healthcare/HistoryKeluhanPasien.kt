@@ -11,22 +11,21 @@ import com.google.firebase.database.*
 
 class HistoryKeluhanPasien : AppCompatActivity() {
 
-    private lateinit var ref: DatabaseReference
     private lateinit var listView: ListView
-//    private lateinit var idPasien : TextView
-//    private lateinit var idDokter : TextView
-//    private lateinit var diagnosis : TextView
-//    private lateinit var detailRiwayat : TextView
-//    private lateinit var obat : TextView
-//    private lateinit var waktuKonsul : TextView
+    private lateinit var idPasien : TextView
+    private lateinit var idDokter : TextView
+    private lateinit var diagnosis : TextView
+    private lateinit var detailRiwayat : TextView
+    private lateinit var obat : TextView
+    private lateinit var waktuKonsul : TextView
     private lateinit var detilRiwayat: MutableList<RiwayatKonsul>
 
     private lateinit var userID: String
 
-//    private lateinit var ref : DatabaseReference
-//    private lateinit var riwayatList : MutableList<RiwayatKonsul>
-//    private lateinit var listData : ListView
-//
+    private lateinit var ref : DatabaseReference
+    private lateinit var riwayatList : MutableList<RiwayatKonsul>
+    private lateinit var listData : ListView
+
 
 
     override fun onSupportNavigateUp(): Boolean {
@@ -48,12 +47,12 @@ class HistoryKeluhanPasien : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         listView = findViewById(R.id.lv_hasil)
-//        idPasien = findViewById(R.id.id_pasien)
-//        idDokter = findViewById(R.id.tv_id_dokter)
-//        diagnosis = findViewById(R.id.tv_diagnosis)
-//        detailRiwayat = findViewById(R.id.tv_detail_riwayat)
-//        obat = findViewById(R.id.tv_obat)
-//        waktuKonsul = findViewById(R.id.tv_waktu_konsul)
+        idPasien = findViewById(R.id.id_pasien)
+        idDokter = findViewById(R.id.tv_id_dokter)
+        diagnosis = findViewById(R.id.tv_diagnosis)
+        detailRiwayat = findViewById(R.id.tv_detail_riwayat)
+        obat = findViewById(R.id.tv_obat)
+        waktuKonsul = findViewById(R.id.tv_waktu_konsul)
 
         val id = intent.getStringExtra(EXTRA_IDRIWAYAT)
         val nama = intent.getStringArrayExtra(EXTRA_NAMARIWAYAT)

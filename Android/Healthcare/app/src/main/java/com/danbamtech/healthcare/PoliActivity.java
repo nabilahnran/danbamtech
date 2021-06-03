@@ -113,7 +113,7 @@ public class PoliActivity extends AppCompatActivity {
             // creating a list of string to display in list view
             final List<String> predicitonsList = new ArrayList<>();
             for (ImageClassifier.Recognition recog : predicitons) {
-                predicitonsList.add(recog.getName() + "  ::::::::::  " + recog.getConfidence());
+                predicitonsList.add(recog.getConfidence() + "%  Kamu Memilih  " + recog.getName());
             }
 
             // creating an array adapter to display the classification result in list view
@@ -121,6 +121,14 @@ public class PoliActivity extends AppCompatActivity {
                     this, R.layout.support_simple_spinner_dropdown_item, predicitonsList);
             listView.setAdapter(predictionsAdapter);
 
+            new Handler().postDelayed(new Runnable() {
+
+                @Override
+                public void run() {
+                    Intent i=new Intent(getBaseContext(),AmbilAntrian.class);
+                    startActivity(i);
+                }
+            }, 5000);
         }
         super.onActivityResult(requestCode, resultCode, data);
     }

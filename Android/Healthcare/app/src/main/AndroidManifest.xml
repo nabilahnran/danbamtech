@@ -20,6 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AmbilAntrian" />
         <activity android:name=".PoliActivity" />
         <activity android:name=".DashboardAntrian" />
         <activity android:name=".Poliklinik" />

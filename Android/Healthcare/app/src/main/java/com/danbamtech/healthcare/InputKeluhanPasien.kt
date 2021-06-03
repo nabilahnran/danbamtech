@@ -78,13 +78,13 @@ class InputKeluhanPasien : AppCompatActivity(){
             simpanData()
 
         }
-//        btnRiwayat.setOnClickListener {
-//            val riwayat = riwayatList.get(0)
-//            val intent = Intent(this, HistoryKeluhanPasien::class.java)
-//            intent.putExtra(HistoryKeluhanPasien.EXTRA_IDRIWAYAT, riwayat.id)
-//            intent.putExtra(HistoryKeluhanPasien.EXTRA_NAMARIWAYAT, riwayat.pasien_id)
-//            startActivity(intent)
-//        }
+        btnRiwayat.setOnClickListener {
+            val riwayat = riwayatList.get(0)
+            intent.putExtra(HistoryKeluhanPasien.EXTRA_IDRIWAYAT, riwayat.id)
+            intent.putExtra(HistoryKeluhanPasien.EXTRA_NAMARIWAYAT, riwayat.pasien_id)
+            val intent = Intent(this, HistoryKeluhanPasien::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun simpanData() {

@@ -47,4 +47,9 @@ class DashboardAntrian : AppCompatActivity() {
             }
         })
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return super.onSupportNavigateUp()
+    }
 }
