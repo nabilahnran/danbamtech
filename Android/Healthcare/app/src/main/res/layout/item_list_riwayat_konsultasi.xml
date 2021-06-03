@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginLeft="32dp"
-    android:layout_marginRight="32dp"
-    android:layout_marginTop="20dp"
-    android:background="@drawable/myshape">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="4dp"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="8dp"
+        app:cardCornerRadius="16dp">
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:ignore="MissingConstraints">
+            android:layout_height="wrap_content">
 
             <TableRow
                 android:layout_width="match_parent"
@@ -36,6 +41,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="8dp"
                     android:textColor="@color/white"
+                    android:layout_weight="1"
                     tools:text="ID PASIEN " />
             </TableRow>
 
@@ -50,7 +56,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="8dp"
                     android:textColor="@color/white"
-                    android:text="ID DOKTER  " />
+                    android:text="ID DOKTER " />
 
                 <TextView
                     android:id="@+id/tv_id_dokter"
@@ -60,7 +66,8 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="8dp"
                     android:textColor="@color/white"
-                    tools:text="ID DOKTER    " />
+                    android:layout_weight="1"
+                    tools:text="ID DOKTER " />
 
             </TableRow>
 
@@ -85,6 +92,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="8dp"
                     android:textColor="@color/white"
+                    android:layout_weight="1"
                     tools:text="DIAGNOSIS  " />
 
             </TableRow>
@@ -101,7 +109,7 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="8dp"
                     android:textColor="@color/white"
-                    android:text="DETAIL RIWAYAT  " />
+                    android:text="DETAIL RIWAYAT " />
 
                 <TextView
                     android:id="@+id/tv_detail_riwayat"
@@ -113,7 +121,8 @@
                     android:maxLines="3"
                     android:layout_marginBottom="8dp"
                     android:textColor="@color/white"
-                    tools:text="DETAIL RIWAYAT  " />
+                    android:layout_weight="1"
+                    tools:text="DETAIL RIWAYAT" />
 
             </TableRow>
             <TableRow
@@ -128,7 +137,7 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="8dp"
                     android:textColor="@color/white"
-                    android:text="OBAT  " />
+                    android:text="OBAT " />
 
                 <TextView
                     android:id="@+id/tv_obat"
@@ -139,6 +148,7 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="8dp"
                     android:textColor="@color/white"
+                    android:layout_weight="1"
                     tools:text="OBAT " />
 
             </TableRow>
@@ -154,7 +164,7 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="8dp"
                     android:textColor="@color/white"
-                    android:text="WAKTU KONSUL  " />
+                    android:text="WAKTU KONSUL " />
 
                 <TextView
                     android:id="@+id/tv_waktu_konsul"
@@ -165,11 +175,14 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="8dp"
                     android:textColor="@color/white"
+                    android:layout_weight="1"
                     tools:text="WAKTU KONSUL " />
 
             </TableRow>
 
         </TableLayout>
 
+    </androidx.cardview.widget.CardView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
