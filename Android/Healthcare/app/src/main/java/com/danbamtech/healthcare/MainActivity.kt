@@ -28,8 +28,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, DashboardDokter::class.java))
         }
 
+//        buat TEST AJA
 //        binding.btnMenudokter.setOnClickListener {
-//            startActivity(Intent(this, DashboardDokter::class.java))
+//            startActivity(Intent(this, PoliActivity::class.java))
 //        }
+
+        binding.btnMenudokter.setOnClickListener {
+            startActivity(Intent(this, DashboardDokter::class.java))
+        }
     }
 }
