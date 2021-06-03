@@ -3,9 +3,8 @@ package com.danbamtech.healthcare
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import com.danbamtech.healthcare.databinding.ActivityAmbilAntrianBinding
 import com.danbamtech.healthcare.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnMenudokter.setOnClickListener {
-            startActivity(Intent(this, PoliActivity::class.java))
+            startActivity(Intent(this, DashboardDokter::class.java))
         }
 
 //        binding.btnMenudokter.setOnClickListener {

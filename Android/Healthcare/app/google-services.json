@@ -1,63 +1,42 @@
 {
   "project_info": {
-    "project_number": "409854698176",
-    "firebase_url": "https://tes-project-3e76c-default-rtdb.firebaseio.com",
-    "project_id": "tes-project-3e76c",
-    "storage_bucket": "tes-project-3e76c.appspot.com"
+    "project_number": "667690309301",
+    "firebase_url": "https://capstone-project-313106-default-rtdb.firebaseio.com",
+    "project_id": "capstone-project-313106",
+    "storage_bucket": "capstone-project-313106.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:409854698176:android:0bbfee88ff920b0aa30325",
+        "mobilesdk_app_id": "1:667690309301:android:937ba3112fcf0427fa50fc",
         "android_client_info": {
           "package_name": "com.danbamtech.healthcare"
         }
       },
       "oauth_client": [
         {
-          "client_id": "409854698176-u83snjahto8b1ulimbqh8gbc81vtgank.apps.googleusercontent.com",
+          "client_id": "667690309301-ems4v3f325ta2noi68fihsnegr4ih4cn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.danbamtech.healthcare",
+            "certificate_hash": "57b738941d48e90ae0a53201f13cf5fbd4e35e82"
+          }
+        },
+        {
+          "client_id": "667690309301-9urhbbkt522p5v2t2kbrgdph1uu61hj6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDe-LpQqy29gUEVIWPsZbeL9PVuKZ4nS8o"
+          "current_key": "AIzaSyAIbFrQP7T32kGusoUbUORJNuK6aqKPBAY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "409854698176-u83snjahto8b1ulimbqh8gbc81vtgank.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:409854698176:android:929798c3c3c51ca1a30325",
-        "android_client_info": {
-          "package_name": "com.helga.tesproject"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "409854698176-u83snjahto8b1ulimbqh8gbc81vtgank.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDe-LpQqy29gUEVIWPsZbeL9PVuKZ4nS8o"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "409854698176-u83snjahto8b1ulimbqh8gbc81vtgank.apps.googleusercontent.com",
+              "client_id": "667690309301-9urhbbkt522p5v2t2kbrgdph1uu61hj6.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

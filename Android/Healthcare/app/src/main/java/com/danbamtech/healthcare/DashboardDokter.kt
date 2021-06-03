@@ -1,12 +1,15 @@
 package com.danbamtech.healthcare
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 import com.danbamtech.healthcare.data.Antrian
+import com.danbamtech.healthcare.data.Pasien
 import com.google.firebase.database.*
 
-class DashboardDokter : AppCompatActivity() {
+class DashboardDokter : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var ref: DatabaseReference
     private lateinit var antrianList : MutableList<Antrian>
@@ -15,6 +18,10 @@ class DashboardDokter : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard_dokter)
+
+        supportActionBar?.elevation = 0f
+        supportActionBar?.title = "Antrian Poli"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         ref = FirebaseDatabase.getInstance().getReference("antrian")
 
@@ -43,6 +50,24 @@ class DashboardDokter : AppCompatActivity() {
             }
         })
 
+        //list data
+        listData.setOnItemClickListener { parent, view, position, id ->
+            val antrian = antrianList.get(position)
+            val intent = Intent(this@DashboardDokter, InputKeluhanPasien::class.java)
+            intent.putExtra(KeluhanPasien.EXTRA_ID, antrian.pasien_id)
+            intent.putExtra(KeluhanPasien.EXTRA_NAMA, antrian.id)
+            startActivity(intent)
+        }
+
+    }
+
+    override fun onClick(v: View?) {
+        TODO("Not yet implemented")
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return super.onSupportNavigateUp()
     }
 
 }

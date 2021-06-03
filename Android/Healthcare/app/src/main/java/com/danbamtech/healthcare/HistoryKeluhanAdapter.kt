@@ -18,22 +18,24 @@ class HistoryKeluhanAdapter(
         val layoutInflater: LayoutInflater = LayoutInflater.from(riwayatConext)
         val view: View = layoutInflater.inflate(layoutResId, null)
 
-        val id_riwayat: TextView = view.findViewById(R.id.id_riwayat)
         val id_pasien: TextView = view.findViewById(R.id.id_pasien)
-        val id_dokter: TextView = view.findViewById(R.id.id_dokter)
-        val riwayat: TextView = view.findViewById(R.id.riwayat_penyakit)
-        val detail_riwayat: TextView = view.findViewById(R.id.detail_riwayat)
-        val waktu: TextView = view.findViewById(R.id.waktu)
+        val id_dokter: TextView = view.findViewById(R.id.tv_id_dokter)
+        val riwayat: TextView = view.findViewById(R.id.tv_diagnosis)
+        val detail_riwayat: TextView = view.findViewById(R.id.tv_detail_riwayat)
+        val obat: TextView = view.findViewById(R.id.tv_obat)
+        val waktu: TextView = view.findViewById(R.id.tv_waktu_konsul)
 
-        val anggota = riwayatList[position]
-
-        id_riwayat.text = "Id riwayat : " + anggota.id
-        id_pasien.text = "Id pasien : " + anggota.id_pasien
-        id_dokter.text = "Id dokter : " + anggota.id_dokter
-        riwayat.text = "Riwayat : " + anggota.riwayat_penyakit
-        detail_riwayat.text = "Detail riwayat : " + anggota.detail_riwayat_penyakit
-        waktu.text = "Waktu : " + anggota.waktu_konsul
+        val riwayatkonsul = riwayatList[position]
+        id_pasien.text = riwayatkonsul.id
+        id_dokter.text = riwayatkonsul.dokter_id
+        riwayat.text = riwayatkonsul.diagnosis
+        detail_riwayat.text = riwayatkonsul.detail_riwayat_penyakit
+        obat.text = riwayatkonsul.obat
+        waktu.text = riwayatkonsul.waktu_konsul
 
         return view
+
+
+
     }
 }

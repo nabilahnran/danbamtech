@@ -17,10 +17,12 @@
         android:fontFamily="@font/righteous"
         android:textSize="40sp" />
 
-    <androidx.recyclerview.widget.RecyclerView
+    <ListView
+        android:id="@+id/lv_hasil"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:listitem="@layout/item_list_antrianpoli"/>
+        android:layout_height="540dp"
+        android:layout_below="@id/tv_poli"
+        android:layout_marginTop="80dp" />
 
 
 </LinearLayout>

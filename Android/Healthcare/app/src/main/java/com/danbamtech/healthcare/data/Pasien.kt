@@ -5,9 +5,9 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class Pasien(
-        var id_pasien: String,
-        var nama_pasien: String,
+        var id: String,
         var jeniskelamin_pasien: String,
-        var umur_pasien: Int,
-        var notelp_pasien: String
+        var nama_pasien: String,
+        var notelp_pasien: String,
+        var umur_pasien: Int
 ) : Parcelable
