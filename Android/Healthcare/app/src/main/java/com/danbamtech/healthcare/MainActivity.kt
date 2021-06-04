@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
 //        binding.btnMenudokter.setOnClickListener {
 //            startActivity(Intent(this, PoliActivity::class.java))
 //        }
+
 //        binding.btnMenudokter.setOnClickListener {
 //            startActivity(Intent(this, AmbilAntrian::class.java))
 //        }

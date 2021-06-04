@@ -100,6 +100,8 @@ public class PoliActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         // if this is the result of our camera image request
+        ArrayList<Float> recogList = new ArrayList<Float>();
+
         if (requestCode == CAMERA_REQEUST_CODE) {
             // getting bitmap of the image
             Bitmap photo = (Bitmap) Objects.requireNonNull(Objects.requireNonNull(data).getExtras()).get("data");
@@ -114,6 +116,7 @@ public class PoliActivity extends AppCompatActivity {
             final List<String> predicitonsList = new ArrayList<>();
             for (ImageClassifier.Recognition recog : predicitons) {
                 predicitonsList.add(recog.getConfidence() + "%  Kamu Memilih  " + recog.getName());
+                recogList.add(recog.getConfidence());
             }
 
             // creating an array adapter to display the classification result in list view
@@ -126,7 +129,12 @@ public class PoliActivity extends AppCompatActivity {
                 @Override
                 public void run() {
                     Intent i=new Intent(getBaseContext(),AmbilAntrian.class);
-                    startActivity(i);
+                    if (!recogList.isEmpty()) {
+                        if (recogList.get(0) >= 0.0) {
+                            Log.d("ACUAN REQUEST HALAMAN ", recogList.get(0).toString());
+                            startActivity(i);
+                        }
+                    }
                 }
             }, 5000);
         }
