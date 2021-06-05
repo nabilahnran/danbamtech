@@ -19,6 +19,7 @@ Besides that, patients don't have to bring any document because the data of the 
 Machine learning: number hand gesture image classification to choose poly that patient want to come in, using CNN
 ###### Python 3.2
 ###### Model created in Google Colab (file ipnyb)
+###### Model converted to tflite format (deploy to Android)
 
 Android Development: Generating ML model and whole operation in app, using Android Studio
 ###### Android Studio v4.2.1
