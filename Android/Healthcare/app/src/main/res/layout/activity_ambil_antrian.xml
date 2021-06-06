@@ -76,8 +76,8 @@
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="52dp"
-                android:layout_height="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginBottom="8dp"
                 android:text="Poli"
@@ -97,6 +97,8 @@
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textView3"
                 app:layout_constraintTop_toBottomOf="@+id/textView4"
