@@ -29,6 +29,7 @@ class ScanQr : AppCompatActivity() {
 
 
     companion object {
+        //1003
         const val REQUEST_CAMERA_PERMISSION = 1003
     }
 
@@ -120,7 +121,7 @@ class ScanQr : AppCompatActivity() {
                             cameraProvider.unbindAll()
                             setFlashOffIcon()
                             if (barcodeList[0].rawValue.toString().toLowerCase().equals("tiket pasien")) {
-                                startActivity(Intent(this, PoliActivity::class.java))
+                                startActivity(Intent(this, Poliklinik::class.java))
                             }
 //                            Snackbar.make(this@ScanQr,binding.clMain,
 //                                "${barcodeList[0].rawValue!!}", Snackbar.LENGTH_INDEFINITE)

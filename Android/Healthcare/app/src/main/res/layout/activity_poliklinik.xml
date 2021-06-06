@@ -9,25 +9,20 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginVertical="32dp"
         android:text="@string/pilih_poliklinik"
         android:textColor="@color/teal"
         android:gravity="center_horizontal"
         android:fontFamily="@font/righteous"
         android:textSize="32sp" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        app:srcCompat="@drawable/sample_camera" />
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:paddingHorizontal="32dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginVertical="32dp">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -127,7 +122,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:orientation="horizontal"
-        android:paddingVertical="32dp">
+        android:layout_marginVertical="32dp"
+        android:paddingHorizontal="32dp">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -221,6 +217,15 @@
 
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="32dp"
+        android:paddingHorizontal="16dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Anda akan di arahkan ke kamera untuk memilih poli pilihan anda." />
 
 
 </LinearLayout>
