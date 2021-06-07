@@ -1,344 +1,462 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/dokter_crud_db">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:background="@drawable/dokter_crud_db">
 
         <TextView
-            android:id="@+id/tv_datapasien"
+            android:id="@+id/tvawal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
             android:fontFamily="@font/barlow_bold"
             android:text="DATA PASIEN"
             android:textAlignment="center"
             android:textColor="#0B99A7"
             android:textSize="40sp"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="61dp" />
+            tools:ignore="MissingConstraints" />
 
-        <!--        <LinearLayout-->
-        <!--            android:id="@+id/ll2"-->
+        <TextView
+            android:id="@+id/tvkedua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:text="Masukkan data konsultasi"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            app:layout_constraintTop_toBottomOf="@id/tvawal" />
+
+        <TableLayout
+            android:id="@+id/table1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvkedua">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="ID DOKTER "
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/id_dokter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="#009688"
+                    android:hint="     id dokter"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="DIAGNOSIS  "
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/diagnosis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="#009688"
+                    android:hint="     diagnosis"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="OBAT  "
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/obat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="#009688"
+                    android:hint="     obat"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="WAKTU KONSUL  "
+                    android:textColor="@color/black" />
+
+
+                <EditText
+                    android:id="@+id/waktu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="#009688"
+                    android:hint="     yyyy-mm-dd"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="DETAIL RIWAYAT  "
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/detail_riwayat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="#009688"
+                    android:hint="     detail riwayat"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </TableRow>
+        </TableLayout>
+
+        <!--        <TableLayout-->
+        <!--            android:id="@+id/table2"-->
         <!--            android:layout_width="match_parent"-->
         <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_marginLeft="40dp"-->
-        <!--            android:layout_marginTop="40dp"-->
-        <!--            android:layout_marginRight="40dp"-->
-        <!--            android:background="@drawable/myshape2"-->
-        <!--            android:orientation="vertical"-->
-        <!--            app:layout_constraintTop_toBottomOf="@id/tv_datapasien">-->
+        <!--            android:layout_marginStart="16dp"-->
+        <!--            android:layout_marginEnd="16dp"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/table1">-->
 
-        <!--            <TableLayout-->
+        <!--            <TableRow-->
         <!--                android:layout_width="match_parent"-->
         <!--                android:layout_height="wrap_content">-->
 
-        <!--                <TableRow-->
-        <!--                    android:layout_width="match_parent"-->
-        <!--                    android:layout_height="wrap_content">-->
+        <!--                <Button-->
+        <!--                    android:id="@+id/btn_lihat_riwayat"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginStart="16dp"-->
+        <!--                    android:backgroundTint="@color/teal_700"-->
+        <!--                    android:text="RIWAYAT KONSUL"-->
+        <!--                    android:textColor="#FFFFFF" />-->
 
-        <!--                    <TextView-->
-        <!--                        android:layout_width="match_parent"-->
-        <!--                        android:layout_height="wrap_content"-->
-        <!--                        android:layout_marginLeft="8dp"-->
-        <!--                        android:layout_marginTop="8dp"-->
-        <!--                        android:layout_marginRight="8dp"-->
-        <!--                        android:text="ID PASIEN  "-->
-        <!--                        android:textColor="@color/white" />-->
-
-        <!--                    <TextView-->
-        <!--                        android:id="@+id/id_pasien"-->
-        <!--                        android:layout_width="match_parent"-->
-        <!--                        android:layout_height="wrap_content"-->
-        <!--                        android:layout_marginLeft="8dp"-->
-        <!--                        android:layout_marginTop="8dp"-->
-        <!--                        android:layout_marginRight="8dp"-->
-        <!--                        android:textColor="@color/white"-->
-        <!--                        tools:text="ID PASIEN " />-->
-        <!--                </TableRow>-->
-
-        <!--                <TableRow-->
-        <!--                    android:layout_width="match_parent"-->
-        <!--                    android:layout_height="wrap_content">-->
-
-        <!--                    <TextView-->
-        <!--                        android:layout_width="match_parent"-->
-        <!--                        android:layout_height="wrap_content"-->
-        <!--                        android:layout_marginLeft="8dp"-->
-        <!--                        android:layout_marginTop="8dp"-->
-        <!--                        android:layout_marginRight="8dp"-->
-        <!--                        android:text="NAMA PASIEN  "-->
-        <!--                        android:textColor="@color/white" />-->
-
-        <!--                    <TextView-->
-        <!--                        android:id="@+id/nama_pasien"-->
-        <!--                        android:layout_width="match_parent"-->
-        <!--                        android:layout_height="wrap_content"-->
-        <!--                        android:layout_marginLeft="8dp"-->
-        <!--                        android:layout_marginTop="8dp"-->
-        <!--                        android:layout_marginRight="8dp"-->
-        <!--                        android:textColor="@color/white"-->
-        <!--                        tools:text="NAMA PASIEN  " />-->
-
-        <!--                </TableRow>-->
-
-        <!--                <TableRow-->
-        <!--                    android:layout_width="match_parent"-->
-        <!--                    android:layout_height="wrap_content">-->
-
-        <!--                    <TextView-->
-        <!--                        android:layout_width="match_parent"-->
-        <!--                        android:layout_height="wrap_content"-->
-        <!--                        android:layout_marginLeft="8dp"-->
-        <!--                        android:layout_marginTop="8dp"-->
-        <!--                        android:layout_marginRight="8dp"-->
-        <!--                        android:text="UMUR PASIEN  "-->
-        <!--                        android:textColor="@color/white" />-->
-
-        <!--                    <TextView-->
-        <!--                        android:id="@+id/umur_pasien"-->
-        <!--                        android:layout_width="match_parent"-->
-        <!--                        android:layout_height="wrap_content"-->
-        <!--                        android:layout_marginLeft="8dp"-->
-        <!--                        android:layout_marginTop="8dp"-->
-        <!--                        android:layout_marginRight="8dp"-->
-        <!--                        android:textColor="@color/white"-->
-        <!--                        tools:text="UMUR PASIEN  " />-->
-
-        <!--                </TableRow>-->
-
-        <!--                <TableRow-->
-        <!--                    android:layout_width="match_parent"-->
-        <!--                    android:layout_height="wrap_content">-->
-
-        <!--                    <TextView-->
-        <!--                        android:layout_width="match_parent"-->
-        <!--                        android:layout_height="wrap_content"-->
-        <!--                        android:layout_marginLeft="8dp"-->
-        <!--                        android:layout_marginTop="8dp"-->
-        <!--                        android:layout_marginRight="8dp"-->
-        <!--                        android:layout_marginBottom="8dp"-->
-        <!--                        android:text="JENIS KELAMIN PASIEN  "-->
-        <!--                        android:textColor="@color/white" />-->
-
-        <!--                    <TextView-->
-        <!--                        android:id="@+id/jk_pasien"-->
-        <!--                        android:layout_width="match_parent"-->
-        <!--                        android:layout_height="wrap_content"-->
-        <!--                        android:layout_marginLeft="8dp"-->
-        <!--                        android:layout_marginTop="8dp"-->
-        <!--                        android:layout_marginRight="8dp"-->
-        <!--                        android:layout_marginBottom="8dp"-->
-        <!--                        android:textColor="@color/white"-->
-        <!--                        tools:text="JENIS KELAMIN PASIEN  " />-->
-
-        <!--                </TableRow>-->
-        <!--            </TableLayout>-->
-
-        <!--        </LinearLayout>-->
-
-        <TextView
-            android:id="@+id/input_data"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/btn_simpan"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="56dp"
-            android:layout_marginEnd="24dp"
-            android:text="Masukkan Data Konsultasi"
-            android:textColor="#0B99A7"
-            android:textSize="20sp"
-            app:layout_constraintTop_toBottomOf="@id/ll2" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="560dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/myshape1"
+            android:backgroundTint="@color/teal_700"
+            android:text="SUBMIT"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/table1" />
+        <!--            </TableRow>-->
 
-            android:orientation="vertical"
-            app:layout_constraintTop_toBottomOf="@id/input_data">
+        <!--        </TableLayout>-->
 
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp">
+        <ListView
+            android:id="@+id/lv_riwayat_konsul"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_simpan" />
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="32dp">
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:text="ID DOKTER " />
-
-                    <EditText
-                        android:id="@+id/id_dokter"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:background="#009688"
-                        android:hint="     id dokter"
-                        android:inputType="textPersonName"
-                        android:padding="8dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:text="DIAGNOSIS  " />
-
-                    <EditText
-                        android:id="@+id/diagnosis"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:background="#009688"
-                        android:hint="     diagnosis"
-                        android:inputType="textPersonName"
-                        android:padding="8dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:text="OBAT  " />
-
-                    <EditText
-                        android:id="@+id/obat"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:background="#009688"
-                        android:hint="     obat"
-                        android:inputType="textPersonName"
-                        android:padding="8dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:text="WAKTU KONSUL  " />
-
-
-                    <EditText
-                        android:id="@+id/waktu"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:background="#009688"
-                        android:hint="     yyyy-mm-dd"
-                        android:inputType="textPersonName"
-                        android:padding="8dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="DETAIL RIWAYAT  " />
-
-                    <EditText
-                        android:id="@+id/detail_riwayat"
-                        android:layout_width="300dp"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:background="#009688"
-                        android:hint="     detail riwayat"
-                        android:inputType="textPersonName"
-                        android:padding="8dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </TableRow>
-            </TableLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/btn_lihat_riwayat"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:backgroundTint="@color/teal_700"
-                    android:text="RIWAYAT KONSUL"
-                    android:textColor="#FFFFFF" />
-
-                <Button
-                    android:id="@+id/btn_simpan"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="100dp"
-                    android:backgroundTint="@color/teal_700"
-                    android:text="SUBMIT"
-                    android:textColor="#FFFFFF" />
-
-            </LinearLayout>
-
-            <ListView
-                android:id="@+id/lv_riwayat_konsul"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"/>
-        </LinearLayout>
-
-
-    </LinearLayout>
 </ScrollView>
+
+
+    <!--</ScrollView>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:orientation="vertical">-->
+
+    <!--&lt;!&ndash;        <LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:orientation="vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="match_parent">&ndash;&gt;-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tv_datapasien"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="56dp"-->
+    <!--                android:fontFamily="@font/barlow_bold"-->
+    <!--                android:text="DATA PASIEN"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textColor="#0B99A7"-->
+    <!--                android:textSize="40sp"-->
+    <!--                android:textStyle="bold"-->
+    <!--                tools:ignore="MissingConstraints"-->
+    <!--                tools:layout_editor_absoluteX="0dp"-->
+    <!--                tools:layout_editor_absoluteY="61dp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/input_data"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="24dp"-->
+    <!--                android:layout_marginTop="56dp"-->
+    <!--                android:layout_marginEnd="24dp"-->
+    <!--                android:text="Masukkan Data Konsultasi"-->
+    <!--                android:textColor="#0B99A7"-->
+    <!--                android:textSize="20sp"-->
+    <!--                app:layout_constraintTop_toBottomOf="@id/ll2" />-->
+
+    <!--&lt;!&ndash;            <LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="520dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_marginTop="16dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:background="@drawable/myshape1"&ndash;&gt;-->
+
+    <!--&lt;!&ndash;                android:orientation="vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:layout_constraintTop_toBottomOf="@id/input_data">&ndash;&gt;-->
+
+    <!--                <TableLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginStart="16dp"-->
+    <!--                    android:layout_marginEnd="16dp">-->
+
+    <!--                    <TableRow-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_marginTop="32dp">-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_marginLeft="8dp"-->
+    <!--                            android:layout_marginRight="8dp"-->
+    <!--                            android:text="ID DOKTER " />-->
+
+    <!--                        <EditText-->
+    <!--                            android:id="@+id/id_dokter"-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_margin="8dp"-->
+    <!--                            android:background="#009688"-->
+    <!--                            android:hint="     id dokter"-->
+    <!--                            android:inputType="textPersonName"-->
+    <!--                            android:padding="8dp"-->
+    <!--                            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                            app:layout_constraintStart_toStartOf="parent"-->
+    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+    <!--                    </TableRow>-->
+
+    <!--                    <TableRow-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content">-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_marginLeft="8dp"-->
+    <!--                            android:layout_marginRight="8dp"-->
+    <!--                            android:text="DIAGNOSIS  " />-->
+
+    <!--                        <EditText-->
+    <!--                            android:id="@+id/diagnosis"-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_margin="8dp"-->
+    <!--                            android:background="#009688"-->
+    <!--                            android:hint="     diagnosis"-->
+    <!--                            android:inputType="textPersonName"-->
+    <!--                            android:padding="8dp"-->
+    <!--                            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                            app:layout_constraintStart_toStartOf="parent"-->
+    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+    <!--                    </TableRow>-->
+
+    <!--                    <TableRow-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content">-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_marginLeft="8dp"-->
+    <!--                            android:layout_marginRight="8dp"-->
+    <!--                            android:text="OBAT  " />-->
+
+    <!--                        <EditText-->
+    <!--                            android:id="@+id/obat"-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_margin="8dp"-->
+    <!--                            android:background="#009688"-->
+    <!--                            android:hint="     obat"-->
+    <!--                            android:inputType="textPersonName"-->
+    <!--                            android:padding="8dp"-->
+    <!--                            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                            app:layout_constraintStart_toStartOf="parent"-->
+    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--                    </TableRow>-->
+
+    <!--                    <TableRow-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content">-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_marginLeft="8dp"-->
+    <!--                            android:layout_marginRight="8dp"-->
+    <!--                            android:text="WAKTU KONSUL  " />-->
+
+
+    <!--                        <EditText-->
+    <!--                            android:id="@+id/waktu"-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_margin="8dp"-->
+    <!--                            android:background="#009688"-->
+    <!--                            android:hint="     yyyy-mm-dd"-->
+    <!--                            android:inputType="textPersonName"-->
+    <!--                            android:padding="8dp"-->
+    <!--                            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                            app:layout_constraintStart_toStartOf="parent"-->
+    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--                    </TableRow>-->
+
+    <!--                    <TableRow-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content">-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_marginLeft="8dp"-->
+    <!--                            android:layout_marginRight="8dp"-->
+    <!--                            android:layout_marginBottom="8dp"-->
+    <!--                            android:text="DETAIL RIWAYAT  " />-->
+
+    <!--                        <EditText-->
+    <!--                            android:id="@+id/detail_riwayat"-->
+    <!--                            android:layout_width="300dp"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_margin="8dp"-->
+    <!--                            android:background="#009688"-->
+    <!--                            android:hint="     detail riwayat"-->
+    <!--                            android:inputType="textPersonName"-->
+    <!--                            android:padding="8dp"-->
+    <!--                            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                            app:layout_constraintStart_toStartOf="parent"-->
+    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--                    </TableRow>-->
+    <!--                </TableLayout>-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginTop="16dp"-->
+    <!--                    android:orientation="horizontal">-->
+
+    <!--                    <Button-->
+    <!--                        android:id="@+id/btn_lihat_riwayat"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_marginStart="16dp"-->
+    <!--                        android:backgroundTint="@color/teal_700"-->
+    <!--                        android:text="RIWAYAT KONSUL"-->
+    <!--                        android:textColor="#FFFFFF" />-->
+
+    <!--                    <Button-->
+    <!--                        android:id="@+id/btn_simpan"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_marginStart="100dp"-->
+    <!--                        android:backgroundTint="@color/teal_700"-->
+    <!--                        android:text="SUBMIT"-->
+    <!--                        android:textColor="#FFFFFF" />-->
+
+    <!--                </LinearLayout>-->
+
+    <!--        <ListView-->
+    <!--            android:id="@+id/lv_riwayat_konsul"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="176dp"-->
+    <!--            android:layout_marginTop="16dp" />-->
+
+    <!--&lt;!&ndash;            </LinearLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;        </LinearLayout>&ndash;&gt;-->
+    <!--    </LinearLayout>-->
+
+    <!--</ScrollView>-->

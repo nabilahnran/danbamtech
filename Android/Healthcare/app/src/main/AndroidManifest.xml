@@ -12,24 +12,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Healthcare">
-        <activity android:name=".LoginDokter"></activity>
-        <activity android:name=".SplashScreen">
+        <activity android:name=".ui.dokter.LoginDokter"></activity>
+        <activity android:name=".ui.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AmbilAntrian" />
-        <activity android:name=".PoliActivity" />
-        <activity android:name=".DashboardAntrian" />
-        <activity android:name=".Poliklinik" />
-        <activity android:name=".HistoryKeluhanPasien"></activity>
-        <activity android:name=".InputKeluhanPasien" />
-        <activity android:name=".KeluhanPasien" />
-        <activity android:name=".DashboardDokter" />
-        <activity android:name=".ScanQr" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ui.dokter.AmbilAntrian" />
+        <activity android:name=".ui.pasien.PoliActivity" />
+        <activity android:name=".ui.DashboardAntrian" />
+        <activity android:name=".ui.pasien.Poliklinik" />
+        <activity android:name=".ui.dokter.InputKeluhanPasien" />
+        <activity android:name=".ui.dokter.DashboardDokter" />
+        <activity android:name=".ui.pasien.ScanQr" />
+        <activity android:name=".ui.MainActivity"></activity>
     </application>
 
 </manifest>
