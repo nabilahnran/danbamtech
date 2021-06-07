@@ -1,4 +1,4 @@
-package com.danbamtech.healthcare;
+package com.danbamtech.healthcare.ui.pasien;
 
 import android.Manifest;
 import android.content.Intent;
@@ -20,7 +20,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.danbamtech.healthcare.R;
 import com.danbamtech.healthcare.classifier.ImageClassifier;
+import com.danbamtech.healthcare.ui.dokter.AmbilAntrian;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -128,7 +130,7 @@ public class PoliActivity extends AppCompatActivity {
 
                 @Override
                 public void run() {
-                    Intent i=new Intent(getBaseContext(),AmbilAntrian.class);
+                    Intent i=new Intent(getBaseContext(), AmbilAntrian.class);
                     if (!recogList.isEmpty()) {
                         if (recogList.get(0) >= 0.0) {
                             Log.d("ACUAN REQUEST HALAMAN ", recogList.get(0).toString());
