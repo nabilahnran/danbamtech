@@ -1,4 +1,4 @@
-package com.danbamtech.healthcare
+package com.danbamtech.healthcare.ui.pasien
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -13,8 +13,10 @@ import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
+import com.danbamtech.healthcare.R
 import com.danbamtech.healthcare.databinding.ActivityScanQrBinding
-import com.google.android.material.snackbar.Snackbar
+import com.danbamtech.healthcare.getAspectRatio
+import com.danbamtech.healthcare.showToast
 import com.google.mlkit.vision.barcode.BarcodeScanner
 import com.google.mlkit.vision.barcode.BarcodeScanning
 import com.google.mlkit.vision.common.InputImage

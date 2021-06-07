@@ -1,4 +1,4 @@
-package com.danbamtech.healthcare
+package com.danbamtech.healthcare.ui.pasien
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

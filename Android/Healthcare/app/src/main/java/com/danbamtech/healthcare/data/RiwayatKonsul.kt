@@ -12,5 +12,5 @@ data class RiwayatKonsul(
     var pasien_id: String,
     var waktu_konsul: String
 ) {
-    constructor(): this ("","","","","","", "")
+    constructor(): this ("","","","","","","")
 }
