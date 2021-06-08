@@ -14,7 +14,6 @@ class DashboardDokter : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var ref: DatabaseReference
     private lateinit var antrianList : MutableList<Antrian>
-//    private lateinit var listData : ListView
 
     private lateinit var binding: ActivityDashboardDokterBinding
 
@@ -22,7 +21,6 @@ class DashboardDokter : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityDashboardDokterBinding.inflate(layoutInflater)
         setContentView(binding.root)
-//        setContentView(R.layout.activity_dashboard_dokter)
 
         supportActionBar?.elevation = 0f
         supportActionBar?.title = "Antrian Poli"

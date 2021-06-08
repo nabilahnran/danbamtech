@@ -65,12 +65,6 @@ class InputKeluhanPasien : AppCompatActivity(){
             simpanData()
 
         }
-//        binding.btnLihatRiwayat.setOnClickListener {
-////            val riwayat = id!!
-////            intent.putExtra(HistoryKeluhanPasien.EXTRA_ID, riwayat)
-//            val intent = Intent(this, HistoryKeluhanPasien::class.java)
-//            startActivity(intent)
-//        }
     }
 
     private fun simpanData() {

@@ -28,36 +28,3 @@
         app:srcCompat="@drawable/ic_flash_off_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    android:orientation="vertical">-->
-
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="16dp"-->
-<!--        android:text="Scan QR Code"-->
-<!--        android:layout_marginHorizontal="8dp"-->
-<!--        android:textColor="@color/teal"-->
-<!--        android:gravity="center_horizontal"-->
-<!--        android:fontFamily="@font/righteous"-->
-<!--        android:textSize="56sp" />-->
-
-<!--    <ImageView-->
-<!--        android:layout_marginTop="32dp"-->
-<!--        android:id="@+id/imageView"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="300dp"-->
-<!--        app:srcCompat="@drawable/sample_qr" />-->
-
-<!--    &lt;!&ndash;    <ImageView&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:id="@+id/imageView2"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_height="300dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_gravity="start"&ndash;&gt;-->
-<!--    &lt;!&ndash;        app:srcCompat="@drawable/scan_bg" />&ndash;&gt;-->
-
-<!--</LinearLayout>-->

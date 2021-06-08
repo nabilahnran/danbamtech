@@ -25,15 +25,6 @@ class LoginDokter : AppCompatActivity() {
             }
 
         }
-//
-//        if (user == "dokter"){
-//
-//                binding.btnLogin.setOnClickListener {
-//                    val intent = Intent(this, DashboardDokter::class.java)
-//                    startActivity(intent)
-//                }
-//
-//        }
 
     }
 }

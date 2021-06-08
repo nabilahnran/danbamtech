@@ -30,17 +30,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, LoginDokter::class.java))
         }
 
-//        buat TEST AJA
-//        binding.btnMenudokter.setOnClickListener {
-//            startActivity(Intent(this, PoliActivity::class.java))
-//        }
-
-//        binding.btnMenudokter.setOnClickListener {
-//            startActivity(Intent(this, AmbilAntrian::class.java))
-//        }
-
-//        binding.btnMenudokter.setOnClickListener {
-//            startActivity(Intent(this, DashboardDokter::class.java))
-//        }
     }
 }

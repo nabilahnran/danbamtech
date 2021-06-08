@@ -48,8 +48,4 @@
             tools:text="ANTRIAN KE " />
 
     </LinearLayout>
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

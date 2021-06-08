@@ -19,7 +19,6 @@ class HistoryKeluhanAdapter(
         val layoutInflater: LayoutInflater = LayoutInflater.from(riwayatConext)
         val view: View = layoutInflater.inflate(layoutResId, null)
 
-//        val id_pasien: TextView = view.findViewById(R.id.id_pasien)
         val id_dokter: TextView = view.findViewById(R.id.tv_id_dokter)
         val riwayat: TextView = view.findViewById(R.id.tv_diagnosis)
         val detail_riwayat: TextView = view.findViewById(R.id.tv_detail_riwayat)
@@ -27,7 +26,6 @@ class HistoryKeluhanAdapter(
         val waktu: TextView = view.findViewById(R.id.tv_waktu_konsul)
 
         val riwayatkonsul = riwayatList[position]
-//        id_pasien.text = riwayatkonsul.id
         id_dokter.text = riwayatkonsul.dokter_id
         riwayat.text = riwayatkonsul.diagnosis
         detail_riwayat.text = riwayatkonsul.detail_riwayat_penyakit
