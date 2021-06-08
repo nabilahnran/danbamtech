@@ -25,7 +25,7 @@ Android Development: Generating ML model and whole operation in app, using Andro
 ###### Android Studio v4.2.1
 ###### Android phone used to open app is recommended android v10
 ###### Layout: There is 11 activity and 3 fragment Tab 14 pixel 4 API 30
-###### Our project app in dev-android branch
+### Our project app in dev-android branch
 
 Cloud Computing: Create a database, store them on Google Cloud Platform, import the database that has been created to Firebase so that the Android application can get the data that has been created, and deploy the machine learning model on AI Platform by using Jupyter Notebook on Google Cloud Platform. Previously we created a relational database using CloudSQL, but this took a lot of credits so we used firebase for our database. We also use Cloud Storage buckets to store datasets that will be used by ML Path
 ###### Firebase
