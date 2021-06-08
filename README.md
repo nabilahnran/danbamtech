@@ -45,11 +45,12 @@ this section with image
 ## Links
 
 Database source:
+Machine Learning Dataset
 1. Raw dataset
 - https://lttm.dei.unipd.it/downloads/gesture 
 - https://www.kaggle.com/muhammadkhalid/sign-language-for-numbers
 - https://www.kaggle.com/ahmedkhanak1995/sign-language-gesture-images-dataset
-- https://drive.google.com/drive/folders/17Pg2_ZfR9A5AMQFEnjYwDSaD6T5jUyGS?usp=sharing (made by team)
+
 2. Cropped Image (from raw dataset)
 - https://drive.google.com/drive/folders/1IyF_sD7Zt2C4JU0zBvFppHpnf9_I9aZh?usp=sharing 
 
